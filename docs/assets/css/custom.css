@@ -1,0 +1,59 @@
+header.left-side {
+    width: 25% !important;
+}
+
+section.right-side {
+    width: 70% !important;
+}
+
+footer.left-side {
+    width: 25% !important;
+    bottom: 30px !important;
+}
+
+div.wrapper {
+    margin: 0 0 !important;
+    width: 100% !important;
+}
+
+.site-header {
+    border-top: 4px solid #424242;
+    border-bottom: 4px solid #e8e8e8;
+    min-height: 40px;
+/*    position: relative;*/
+    position: fixed;
+    float: none !important;
+    width: 88.5% !important;
+    background-color: white;
+}
+
+.site-header-content {
+    padding: 10px 0px;
+}
+
+.page-content {
+    padding-top: 50px;
+}
+
+body {
+    padding-top: 0px !important;
+    margin-top: 0px;
+}
+
+@media print, screen and (max-width: 960px) {
+    header {
+        width: 100% !important;
+    }
+
+    section {
+        width: 100% !important;
+    }
+
+    footer {
+        width: 100% !important;
+    }
+
+    .site-header {
+        width: 51.4% !important;
+    }
+}

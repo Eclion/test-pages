@@ -6,6 +6,7 @@
     <title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="/assets/css/custom.css">
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,7 +14,17 @@
 </head>
 <body>
 <div class="wrapper">
-    <header>
+    <header class="site-header" role="banner">
+        <div class="site-header-content">
+            <a class="site-title" href="/">eclionast.github.io</a>
+            <nav class="site-nav">
+                
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+    <header class="left-side">
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
@@ -33,17 +44,18 @@
         </ul>
         {% endif %}
     </header>
-    <section>
+    <section class="right-side">
 
         {{ content }}
 
     </section>
-    <footer>
+    <footer class="left-side">
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
     </footer>
+    </main>
 </div>
 <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 
